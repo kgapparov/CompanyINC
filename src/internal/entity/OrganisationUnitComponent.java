@@ -4,13 +4,12 @@ import internal.visitors.Visitor;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.function.Predicate;
 
 public abstract class OrganisationUnitComponent {
     private Collection<Vacancy> vacancyes;
     private String name;
     private String id;
-    private Double budget;
+    private Budget budget;
     private Vacancy manager;
 
     OrganisationUnitComponent(int size, Organisation org){
@@ -30,11 +29,11 @@ public abstract class OrganisationUnitComponent {
         return vacancyes;
     }
 
-    public Double getBudget() {
+    public Budget getBudget() {
         return budget;
     }
 
-    public void setBudget(Double budget) {
+    public void setBudget(Budget budget) {
         this.budget = budget;
     }
 

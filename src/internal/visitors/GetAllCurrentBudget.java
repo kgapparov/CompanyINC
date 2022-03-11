@@ -16,14 +16,14 @@ public class GetAllCurrentBudget implements Visitor{
     @Override
     public void visit(OrganisationUnitComposite oc, Predicate<OrganisationUnitComposite> condition) {
         if (condition.test(oc)) {
-            budget += oc.getBudget();
+            //budget += oc.getBudget();
         }
     }
 
     @Override
     public void visit(OrganisationUnitLeaf ol, Predicate<OrganisationUnitLeaf> condition) {
         if (condition.test(ol)) {
-            budget += ol.getBudget();
+            //budget += ol.getBudget();
         }
     }
 
