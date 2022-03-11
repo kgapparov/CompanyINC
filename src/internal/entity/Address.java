@@ -1,4 +1,7 @@
 package internal.entity;
 
-public class Address {
+import java.io.Serializable;
+
+public class Address implements Serializable {
+
 }
